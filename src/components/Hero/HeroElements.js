@@ -14,6 +14,8 @@ export const HeroContainer = styled.div`
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
   animation: 1.2s ${fadeInLeftAnimation};
   h1 {
     font-size: 3.5rem;

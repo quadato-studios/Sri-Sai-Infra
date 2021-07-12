@@ -16,6 +16,9 @@ function Footer() {
           <FaFacebook size={30} style={{ margin: "0 1.5rem" }} />
           <FaInstagram size={30} style={{ margin: "0 1.5rem" }} />
         </div>
+        <p>
+          Made with <span>❤ </span>by <a href="https://quadato.com">Quadato</a>
+        </p>
       </LeftContainer>
       <MiddleContainer>
         <h3>Links</h3>

@@ -17,12 +17,21 @@ export const LeftContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: #00a2ff;
+  }
+  span {
+    color: red;
+    font-size: 20px;
   }
 `;
 export const MiddleContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   ul {
@@ -41,6 +50,8 @@ export const MiddleContainer = styled.div`
     }
   }
   h3 {
+    margin-left: -3rem;
+    margin-bottom: 1rem;
     border-bottom: 1px solid grey;
     width: 50px;
   }
@@ -52,6 +63,7 @@ export const RightContainer = styled.div`
   flex-direction: column;
 
   h3 {
+    margin-bottom: 1rem;
     border-bottom: 1px solid grey;
   }
   p {
