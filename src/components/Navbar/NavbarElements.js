@@ -1,0 +1,69 @@
+import styled from "styled-components";
+
+export const Nav = styled.nav`
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: Poppins;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(33px);
+  @media screen and (max-width: 780px) {
+    height: 35px;
+  }
+`;
+
+export const NavbarContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+`;
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+  margin-top: 2rem;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavItem = styled.li`
+  height: 80px;
+`;
+
+export const NavLinks = styled.a`
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100% auto;
+  cursor: pointer;
+  font-size: 18px;
+
+  &.active {
+    color: #01bf71;
+    font-weight: 500;
+  }
+  &:hover {
+    color: #00a2ff;
+    background: rgba(0, 194, 255, 0.13);
+    border-radius: 6px;
+  }
+`;
+
+export const NavLogo = styled.img`
+  display: flex;
+  justify-self: flex-start;
+`;
+export const MainDiv = styled.div`
+  justify-content: center;
+`;
