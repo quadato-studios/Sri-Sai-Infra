@@ -7,26 +7,26 @@ import img6 from "../assets/6.jpg";
 const data = [
   {
     id: 1,
-    title: "Richmond Enclave",
-    address: "Kondapur, Hyderabad",
+    title: "Acropolis Tulip",
+    address: "Moulali, Hyderabad",
     img: img4,
   },
   {
     id: 2,
-    title: "Sri Raghavendra Residency",
-    address: "Manikonda, Hyderabad",
+    title: "Richmond Enclave",
+    address: "Kondapur, Hyderabad",
     img: img1,
   },
   {
     id: 3,
-    title: "Sampath Soudha",
-    address: "Manikonda, Hyderabad",
+    title: "Sree Sampath Residency",
+    address: "Madhurawada, Vizag",
     img: img6,
   },
   {
     id: 4,
-    title: "Acropolis Tulip",
-    address: "Moulali, Hyderabad",
+    title: "Sri Raghavendra Residency",
+    address: "Manikonda, Hyderabad",
     img: img2,
   },
   {
@@ -37,8 +37,8 @@ const data = [
   },
   {
     id: 6,
-    title: "Sree Sampath Residency",
-    address: "Madhurawada, Vizag",
+    title: "Sampath Soudha",
+    address: "Manikonda, Hyderabad",
     img: img3,
   },
 ];

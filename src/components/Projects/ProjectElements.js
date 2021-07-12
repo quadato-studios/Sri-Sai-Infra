@@ -6,11 +6,14 @@ export const ProjectConatiner = styled.div`
   grid-template-columns: 1fr;
   place-items: center;
   padding-top: 5rem;
-  overflow-x: hidden;
   h1 {
     font-size: 48px;
     font-weight: 600;
     color: #0062ff;
+  }
+  h4 {
+    font-size: 28px;
+    margin-top: 1.2rem;
   }
 `;
 
@@ -21,5 +24,5 @@ export const Cards = styled.div`
 
   padding-top: 2rem;
   place-items: center;
-  overflow-x: hidden;
+  overflow-y: hidden;
 `;
