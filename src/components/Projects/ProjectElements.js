@@ -6,11 +6,18 @@ export const ProjectConatiner = styled.div`
   grid-template-columns: 1fr;
   place-items: center;
   padding-top: 5rem;
+<<<<<<< HEAD
   overflow-y: hidden;
+=======
+>>>>>>> a61b2eb9908a4d167bcd0d0a6605b79b6fad3168
   h1 {
     font-size: 48px;
     font-weight: 600;
     color: #0062ff;
+  }
+  h4 {
+    font-size: 28px;
+    margin-top: 1.2rem;
   }
 `;
 
@@ -21,5 +28,5 @@ export const Cards = styled.div`
 
   padding-top: 2rem;
   place-items: center;
-  overflow-x: hidden;
+  overflow-y: hidden;
 `;

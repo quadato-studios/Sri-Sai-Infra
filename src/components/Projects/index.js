@@ -20,7 +20,7 @@ function Projects(props) {
             setToggle((prevState) => !prevState);
           }}
           checked={toggle}
-          onColor="#86d3ff"
+          onColor="#0062ff"
           onHandleColor="#2693e6"
           handleDiameter={30}
           uncheckedIcon={false}
@@ -32,6 +32,7 @@ function Projects(props) {
           className="react-switch"
           id="material-switch"
         />
+        <h4>{toggle ? "On Going Projects" : "Completed Projects"}</h4>
         <Cards>
           {toggle
             ? Data.map((key) => (
