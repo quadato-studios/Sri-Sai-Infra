@@ -9,7 +9,8 @@ import {
   MainDiv,
 } from "./NavbarElements";
 import Logo from "../../assets/logo.png";
-function Navbar() {
+
+const Navbar = () => {
   return (
     <MainDiv>
       <Nav>
@@ -17,25 +18,25 @@ function Navbar() {
           <NavLogo src={Logo} width="350px" height="90px" />
           <NavMenu>
             <NavItem>
-              <NavLinks>Home</NavLinks>
+              <NavLinks to="/">Home</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>About</NavLinks>
+              <NavLinks to="/about">About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Projects</NavLinks>
+              <NavLinks to="/projects">Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Gallery</NavLinks>
+              <NavLinks to="/gallery">Gallery</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>Contact Us</NavLinks>
+              <NavLinks to="/contact-us">Contact Us</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
       </Nav>
     </MainDiv>
   );
-}
+};
 
 export default Navbar;

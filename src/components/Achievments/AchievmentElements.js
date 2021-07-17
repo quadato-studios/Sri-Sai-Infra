@@ -25,18 +25,16 @@ export const LeftContainer = styled.div`
   }
 `;
 export const RightContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  /* grid-template-columns: 1fr; */
-  /* grid-template-rows: 1fr; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 `;
 
 export const RightComponents = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 2rem 6rem;
   h4 {
     font-weight: 500;
     font-size: 18px;

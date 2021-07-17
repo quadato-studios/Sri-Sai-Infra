@@ -6,7 +6,7 @@ export const ProjectConatiner = styled.div`
   grid-template-columns: 1fr;
   place-items: center;
   padding-top: 5rem;
-  overflow-x: hidden;
+  overflow-y: hidden;
   h1 {
     font-size: 48px;
     font-weight: 600;

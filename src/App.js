@@ -1,26 +1,19 @@
 import React from "react";
-import Achievments from "./components/Achievments";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Team from "./components/Team";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
+import Home from "./pages";
+import ProjectsPage from "./pages/ProjectsPage";
 
-import bgImg from "./assets/bg3.jpg";
-
-function App() {
+const App = () => {
   return (
-    <div style={{ backgroundImage: `url(${bgImg})` }}>
-      <Navbar />
-      <Hero />
-      <Team />
-      <Projects />
-      <Achievments />
-      <CTA />
-      <Footer />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={AboutPage} exact />
+        <Route path="/projects" component={ProjectsPage} exact />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -14,6 +14,7 @@ function Projects(props) {
     <div data-aos="fade-up" data-aos-duration="2000">
       <ProjectConatiner>
         <h1>Projects</h1>
+        <h4>{toggle ? "Current Projects" : "Completed Projects"}</h4>
         <Switch
           onChange={() => {
             setToggle((prevState) => !prevState);

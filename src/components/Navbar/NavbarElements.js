@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const Nav = styled.nav`
   height: 80px;
   justify-content: center;
@@ -9,6 +9,7 @@ export const Nav = styled.nav`
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-sizing: border-box;
   border-radius: 20px;
+  overflow-y: hidden;
   font-family: Poppins;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(33px);
@@ -39,7 +40,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled.a`
+export const NavLinks = styled(Link)`
   color: #000;
   display: flex;
   align-items: center;

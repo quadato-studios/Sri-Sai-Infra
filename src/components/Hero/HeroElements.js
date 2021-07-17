@@ -10,6 +10,7 @@ export const HeroContainer = styled.div`
   margin-top: 10rem;
   margin-left: 7rem;
   font-family: Poppins;
+  overflow-y: hidden;
 `;
 export const TextContainer = styled.div`
   display: flex;

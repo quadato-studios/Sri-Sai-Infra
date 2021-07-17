@@ -41,7 +41,7 @@ function Achievments() {
           <RightComponents>
             <FaUniversity size={23} />
             <h4>
-              <CountUp end={5} duration={7.5} delay={2} />
+              <CountUp end={5} duration={5} delay={1} />
             </h4>
 
             <h3>Branches</h3>
