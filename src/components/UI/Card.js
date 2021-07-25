@@ -61,6 +61,12 @@ const CardComponent = styled.div`
     box-shadow: 0px 0px 26px rgba(0, 194, 255, 0.5);
     animation: 1s ${zoomInAnimation};
   }
+  @media screen and (max-width: 480px) {
+    &:hover {
+      box-shadow: none;
+      animation: none;
+    }
+  }
   img {
     border-radius: 25px;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);
