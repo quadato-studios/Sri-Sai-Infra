@@ -37,7 +37,7 @@ export const TeamContainer = styled.div`
     }
   }
   @media screen and (max-width: 480px) {
-    margin-top: -10rem;
+    margin-top: 2rem;
     overflow-y: hidden;
   }
 `;
