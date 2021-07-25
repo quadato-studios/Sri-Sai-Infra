@@ -8,6 +8,10 @@ export const CTAContainer = styled.div`
   background: rgba(0, 163, 255);
   margin-bottom: 5rem;
   margin-top: 3rem;
+  @media screen and (max-width: 411px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 `;
 
 export const LeftCTAContainer = styled.div`

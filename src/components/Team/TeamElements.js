@@ -19,4 +19,25 @@ export const TeamContainer = styled.div`
     margin: 0 10rem;
     text-align: center;
   }
+  @media screen and (max-width: 768px) {
+    overflow-y: hidden;
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      overflow-y: hidden;
+
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+      margin: 0rem;
+      margin-top: 2rem;
+      text-align: center;
+      margin: 0rem 1rem;
+    }
+  }
+  @media screen and (max-width: 411px) {
+    margin-top: -10rem;
+    overflow-y: hidden;
+  }
 `;

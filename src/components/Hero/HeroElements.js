@@ -12,6 +12,13 @@ export const HeroContainer = styled.div`
   font-family: Poppins;
   overflow-y: hidden;
   /* padding: 100px 0px; */
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    margin-left: 0rem;
+  }
 `;
 export const TextContainer = styled.div`
   display: flex;
@@ -40,6 +47,22 @@ export const TextContainer = styled.div`
     margin-top: -0.3rem;
     font-size: 1.2rem;
   }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1.2s ${fadeInLeftAnimation};
+
+    h1 {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
 `;
 export const BtnContainer = styled.div`
   button {
@@ -59,6 +82,9 @@ export const BtnContainer = styled.div`
       transform: translateY(-5px);
     }
   }
+  @media screen and (max-width: 768px) {
+    padding: 0.5rem 0.8rem;
+  }
 `;
 
 export const ImgContainer = styled.img`
@@ -67,11 +93,26 @@ export const ImgContainer = styled.img`
   border-radius: 0 30px 30px 30px;
   box-shadow: 0px 0px 16px rgba(0, 194, 255, 0.5);
   margin-left: 10rem;
+  width: 70%;
   animation: 1.2s ${fadeInRightAnimation};
 
   &:hover {
     box-shadow: 0px 0px 32px rgba(0, 194, 255, 0.5);
     transform: translateY(-5px);
+  }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+    margin-top: 2rem;
+    width: 100%;
+
+    animation: 1.2s ${fadeInRightAnimation};
+    &:hover {
+      box-shadow: 0px 0px 32px rgba(0, 194, 255, 0.5);
+      transform: translateY(-5px);
+    }
   }
 `;
 

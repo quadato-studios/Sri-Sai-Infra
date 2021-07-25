@@ -6,6 +6,12 @@ export const FooterContainer = styled.div`
   grid-template-rows: 1fr;
   /* margin: 3rem; */
   font-family: Poppins;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  @media screen and (max-width: 411px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const LeftContainer = styled.div`
@@ -27,6 +33,11 @@ export const LeftContainer = styled.div`
   span {
     color: red;
     font-size: 20px;
+  }
+  img {
+    @media screen and (max-width: 411px) {
+      display: none;
+    }
   }
 `;
 export const MiddleContainer = styled.div`
@@ -55,6 +66,9 @@ export const MiddleContainer = styled.div`
     border-bottom: 1px solid grey;
     width: 50px;
   }
+  @media screen and (max-width: 411px) {
+    display: none;
+  }
 `;
 export const RightContainer = styled.div`
   display: flex;
@@ -80,5 +94,8 @@ export const RightContainer = styled.div`
       margin-left: 0.6rem;
       font-size: 16px;
     }
+  }
+  @media screen and (max-width: 411px) {
+    display: none;
   }
 `;

@@ -12,11 +12,35 @@ export const Nav = styled.nav`
   font-family: Poppins;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(33px);
-  @media screen and (max-width: 780px) {
-    height: 35px;
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
-
+export const MobileNav = styled.nav`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow-y: hidden;
+    font-family: Poppins;
+    background: rgba(255, 255, 255, 0.3);
+    /* background-color: blue; */
+    backdrop-filter: blur(33px);
+    img {
+      width: 50vw;
+    }
+    .icon {
+      margin-right: 5rem;
+    }
+  }
+`;
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-around;

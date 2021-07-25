@@ -26,7 +26,7 @@ function Hero() {
         </BtnContainer>
       </TextContainer>
       <TiltWrapper>
-        <ImgContainer src={img1} width="70%" />
+        <ImgContainer src={img1} />
       </TiltWrapper>
     </HeroContainer>
   );

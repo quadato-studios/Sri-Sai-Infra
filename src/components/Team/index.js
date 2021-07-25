@@ -6,17 +6,19 @@ AOS.init();
 
 function Team() {
   return (
-    <div data-aos="fade-left">
-      <TeamContainer>
+    <TeamContainer>
+      <div data-aos="fade-left">
         <h1>Our Team</h1>
+      </div>
+      <div data-aos="fade-right">
         <p>
           We have carefully cultivated a small team of gifted and diverse
           individuals,all of whom are industry superstars. By being extremely
           selective about our hires, we are able to invest a substantial amount
           of resources to attract and retain top performers.
         </p>
-      </TeamContainer>
-    </div>
+      </div>
+    </TeamContainer>
   );
 }
 

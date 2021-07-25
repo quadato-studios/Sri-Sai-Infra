@@ -16,6 +16,22 @@ export const ProjectConatiner = styled.div`
     font-size: 28px;
     margin-top: 1.2rem;
   }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+  }
+  @media screen and (max-width: 411px) {
+    h1 {
+      font-size: 30px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+  }
 `;
 
 export const Cards = styled.div`
@@ -26,4 +42,14 @@ export const Cards = styled.div`
   padding-top: 2rem;
   place-items: center;
   overflow-y: hidden;
+  @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @media screen and (max-width: 411px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 `;

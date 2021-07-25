@@ -13,6 +13,16 @@ export const MainContainer = styled.div`
   margin: 2rem 2rem;
   border-radius: 30px;
   color: black;
+  @media screen and (max-width: 768px) {
+    margin: 0rem;
+  }
+  @media screen and (max-width: 411px) {
+    margin: 0rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 90vw;
+    margin: 0rem 1.2rem;
+  }
 `;
 
 export const LeftContainer = styled.div`
@@ -23,11 +33,34 @@ export const LeftContainer = styled.div`
     font-size: 38px;
     line-height: 64px;
   }
+  @media screen and (max-width: 768px) {
+    margin-left: 5rem;
+    h1 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+  @media screen and (max-width: 411px) {
+    margin-left: 0rem;
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 export const RightContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+  }
+  @media screen and (max-width: 411px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+  }
 `;
 
 export const RightComponents = styled.div`
@@ -43,5 +76,10 @@ export const RightComponents = styled.div`
   }
   h3 {
     font-weight: 300;
+  }
+  @media screen and (max-width: 768px) {
+    h4 {
+      margin-bottom: -0.5rem;
+    }
   }
 `;
