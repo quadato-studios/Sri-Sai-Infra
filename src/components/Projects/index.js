@@ -24,19 +24,15 @@ function Projects(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleClick = (e, id, m) => {
     onOpen();
-
-    console.log("id", id);
     if (m === "n") {
-      data.map((i) => {
+      data.forEach((i) => {
         if (i.id === id) {
-          console.log(i);
           setInfo(i);
         }
       });
     } else {
-      Data.map((i) => {
+      Data.forEach((i) => {
         if (i.id === id) {
-          console.log(i);
           setInfo(i);
         }
       });
