@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
   @media screen and (max-width: 768px) {
     margin: 0rem;
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     margin: 0rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -40,7 +40,7 @@ export const LeftContainer = styled.div`
       line-height: 38px;
     }
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     margin-left: 0rem;
     h1 {
       text-align: center;
@@ -56,7 +56,7 @@ export const RightContainer = styled.div`
     grid-template-rows: 1fr;
     grid-gap: 1rem;
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 1rem;

@@ -29,19 +29,7 @@ export const TextContainer = styled.div`
   h1 {
     font-size: 3.5rem;
     font-weight: 900;
-    &:nth-of-type(1) {
-      color: #af60ff;
-      font-weight: 700;
-    }
-    &:nth-of-type(2) {
-      color: #8849c7;
-    }
-    &:nth-of-type(3) {
-      color: #651fac;
-    }
-    &:nth-of-type(4) {
-      color: #3c0473;
-    }
+    color: rgba(0, 163, 255);
   }
   p {
     margin-top: -0.3rem;

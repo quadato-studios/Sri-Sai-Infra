@@ -36,7 +36,7 @@ export const TeamContainer = styled.div`
       margin: 0rem 1rem;
     }
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     margin-top: -10rem;
     overflow-y: hidden;
   }

@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr 2fr;
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -35,7 +35,7 @@ export const LeftContainer = styled.div`
     font-size: 20px;
   }
   img {
-    @media screen and (max-width: 411px) {
+    @media screen and (max-width: 480px) {
       display: none;
     }
   }
@@ -66,7 +66,7 @@ export const MiddleContainer = styled.div`
     border-bottom: 1px solid grey;
     width: 50px;
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 `;
@@ -95,7 +95,7 @@ export const RightContainer = styled.div`
       font-size: 16px;
     }
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 `;

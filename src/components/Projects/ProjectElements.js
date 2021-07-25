@@ -24,7 +24,7 @@ export const ProjectConatiner = styled.div`
       font-size: 24px;
     }
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     h1 {
       font-size: 30px;
     }
@@ -47,7 +47,7 @@ export const Cards = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  @media screen and (max-width: 411px) {
+  @media screen and (max-width: 480px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
