@@ -11,6 +11,7 @@ export const HeroContainer = styled.div`
   margin-left: 7rem;
   font-family: Poppins;
   overflow-y: hidden;
+  /* padding: 100px 0px; */
 `;
 export const TextContainer = styled.div`
   display: flex;

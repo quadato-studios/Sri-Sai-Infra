@@ -6,37 +6,37 @@ import img5 from "../assets/5.jpg";
 import img6 from "../assets/6.jpg";
 const data = [
   {
-    id: 1,
+    id: "abc",
     title: "Richmond Enclave",
     address: "Kondapur, Hyderabad",
     img: img1,
   },
   {
-    id: 2,
+    id: "def",
     title: "Sri Raghavendra Residency",
     address: "Manikonda, Hyderabad",
     img: img2,
   },
   {
-    id: 3,
+    id: "ghi",
     title: "Sampath Soudha",
     address: "Manikonda, Hyderabad",
     img: img3,
   },
   {
-    id: 4,
+    id: "jkl",
     title: "Acropolis Tulip",
     address: "Moulali, Hyderabad",
     img: img4,
   },
   {
-    id: 5,
+    id: "mno",
     title: "Sri Nilayam",
     address: "Manikonda, Hyderabad",
     img: img5,
   },
   {
-    id: 6,
+    id: "pqr",
     title: "Sree Sampath Residency",
     address: "Madhurawada, Vizag",
     img: img6,

@@ -5,7 +5,6 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  top: 0;
   border: 1px solid rgba(255, 255, 255, 0.22);
   box-sizing: border-box;
   border-radius: 20px;

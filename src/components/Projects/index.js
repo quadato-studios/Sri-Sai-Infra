@@ -1,19 +1,51 @@
 import React, { useState } from "react";
 import { Cards, ProjectConatiner } from "./ProjectElements";
 import Card from "../UI/Card";
-import Data from "../../assets/Data";
-import NewData from "../../assets/NewData";
+import Data from "../../assets/completed_ts";
+import data from "../../assets/current_ts";
 import Switch from "react-switch";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+} from "@chakra-ui/react";
+import CoProjectDetails from "../page-components/CompletedProjectDetails";
+import CurProjectDetails from "../page-components/CurrentProjectDetails";
 AOS.init();
 function Projects(props) {
   const [toggle, setToggle] = useState(false);
-  console.log(toggle);
+  const [info, setInfo] = useState();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleClick = (e, id, m) => {
+    onOpen();
+
+    console.log("id", id);
+    if (m === "n") {
+      data.map((i) => {
+        if (i.id === id) {
+          console.log(i);
+          setInfo(i);
+        }
+      });
+    } else {
+      Data.map((i) => {
+        if (i.id === id) {
+          console.log(i);
+          setInfo(i);
+        }
+      });
+    }
+  };
   return (
     <div data-aos="fade-up" data-aos-duration="2000">
       <ProjectConatiner>
-        <h1>Projects</h1>
+        <h1>Projects!!</h1>
         <h4>{toggle ? "Current Projects" : "Completed Projects"}</h4>
         <Switch
           onChange={() => {
@@ -32,27 +64,79 @@ function Projects(props) {
           className="react-switch"
           id="material-switch"
         />
-        <h4>{toggle ? "On Going Projects" : "Completed Projects"}</h4>
         <Cards>
-          {toggle
-            ? Data.map((key) => (
-                <Card
-                  id={key.id}
-                  title={key.title}
-                  address={key.address}
-                  src={key.img}
-                />
+          {!toggle
+            ? Data.map((ex) => (
+                <div key={ex.id} onClick={(ev) => handleClick(ev, ex.id, "o")}>
+                  <Card
+                    key={ex.id}
+                    id={ex.id}
+                    title={ex.title}
+                    address={ex.address}
+                    src={ex.img}
+                  />
+                </div>
               ))
-            : NewData.map((key) => (
-                <Card
-                  id={key.id}
-                  title={key.title}
-                  address={key.address}
-                  src={key.img}
-                />
+            : data.map((ez) => (
+                <div key={ez.id} onClick={(ev) => handleClick(ev, ez.id, "n")}>
+                  <Card
+                    key={ez.id}
+                    id={ez.id}
+                    title={ez.title}
+                    address={ez.address}
+                    src={ez.img}
+                  />
+                </div>
               ))}
         </Cards>
       </ProjectConatiner>
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        size="4xl"
+        scrollBehavior="inside"
+        motionPreset="slideInBottom"
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader
+            style={{
+              overflowY: "hidden",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {info?.title}
+          </ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            {toggle ? (
+              <CurProjectDetails
+                src={info?.img}
+                address={info?.address}
+                status={info?.status}
+                totalSqFt={info?.sqft}
+                municipality={info?.municipality}
+                noOfFlat={info?.noOfFlat}
+                flatSize={info?.flatSize}
+                costOfProject={info?.costOfProject}
+                flats={info?.flats}
+                gmap={info?.gmap}
+              />
+            ) : (
+              <CoProjectDetails
+                src={info?.img}
+                address={info?.address}
+                status={info?.status}
+                totalSqFt={info?.totalSqFt}
+                municipality={info?.municipality}
+                flats={info?.flats}
+                completionStatus={info?.completionStatus}
+              />
+            )}
+          </ModalBody>
+        </ModalContent>
+      </Modal>
     </div>
   );
 }

@@ -3,9 +3,13 @@ import styled, { keyframes } from "styled-components";
 import { pulse } from "react-animations";
 const zoomInAnimation = keyframes`${pulse}`;
 function Card(props) {
+  // const handleClick = (e) => {
+  //   const id = e.target.id;
+  //   console.log(id);
+  // };
   return (
-    <CardComponent>
-      <img src={props.src} alt="#" width="90%" height="400px" />
+    <CardComponent id={props.id}>
+      <img src={props.src} alt="#" width="100%" height="100%" />
       <h5>{props.title}</h5>
       <p>{props.address}</p>
     </CardComponent>
@@ -17,7 +21,11 @@ export default Card;
 const CardComponent = styled.div`
   text-align: center;
   overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
   padding: 32px;
+  height: fit-content;
+  width: fit-content;
   background: rgba(255, 255, 255, 0.23);
   backdrop-filter: blur(200px);
   border-radius: 8px;
