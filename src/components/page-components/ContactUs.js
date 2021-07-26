@@ -1,7 +1,15 @@
-import React from "react";
-
+import React, { useState } from "react";
+import Sidebar from "../Navbar";
 const ContactUs = () => {
-  return <div></div>;
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+    </>
+  );
 };
 
 export default ContactUs;

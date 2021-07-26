@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   Nav,
   NavbarContainer,
@@ -10,9 +10,8 @@ import {
   MobileNav,
 } from "./NavbarElements";
 import Logo from "../../assets/logo.png";
-import { IoIosMenu, IoIosClose } from "react-icons/io";
-const Navbar = () => {
-  const [menuToggle, setMenuToggle] = useState(false);
+import { IoIosMenu } from "react-icons/io";
+const Navbar = ({ toggle }) => {
   return (
     <MainDiv>
       <Nav>
@@ -39,25 +38,8 @@ const Navbar = () => {
         </NavbarContainer>
       </Nav>
       <MobileNav>
-        {!menuToggle ? (
-          <IoIosMenu
-            onClick={() => {
-              console.log("click menu");
-              setMenuToggle((prevState) => !prevState);
-            }}
-            className="icon"
-            size={23}
-          />
-        ) : (
-          <IoIosClose
-            onClick={() => {
-              console.log("click close");
-              setMenuToggle((prevState) => !prevState);
-            }}
-            className="icon"
-            size={23}
-          />
-        )}
+        <IoIosMenu onClick={toggle} className="icon" size={32} />
+
         <img src={Logo} alt="#" />
       </MobileNav>
     </MainDiv>

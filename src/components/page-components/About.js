@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import CTA from "../CTA";
@@ -8,11 +8,17 @@ import "aos/dist/aos.css";
 
 import about1 from "../../assets/about-1.jpg";
 import about2 from "../../assets/about-2.gif";
+import Sidebar from "../Sidebar";
 AOS.init();
 function About() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <AboutContainer>
-      <Navbar />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
       <AboutTitle>About Us</AboutTitle>
       <TopContainer>
         <div data-aos="fade-right">
@@ -33,8 +39,6 @@ function About() {
         <div data-aos="fade-left">
           <Image alt="#" src={about1} />
         </div>
-      </TopContainer>
-      <TopContainer>
         <div
           style={{
             justifyContent: "center",
@@ -66,13 +70,20 @@ function About() {
 
 export default About;
 const AboutContainer = styled.div`
+  overflow-y: hidden;
   justify-content: center;
+  align-items: center;
 `;
 const AboutTitle = styled.h1`
   font-size: 48px;
   margin-left: 30px;
   border-bottom: 2px solid black;
   width: 35%;
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const TopContainer = styled.div`
   display: grid;
@@ -83,9 +94,20 @@ const TopContainer = styled.div`
   align-items: center;
   h4 {
     font-size: 24px;
-    margin-left: 30px;
+    margin-left: 0;
     color: #00a2ff;
     margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    text-align: center;
+  }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    h4 {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -96,7 +118,19 @@ const AboutDescription = styled.p`
   color: black;
   text-justify: auto;
   align-items: flex-start;
+  overflow-y: hidden;
+  @media screen and (max-width: 480px) {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
 `;
 const Image = styled.img`
   align-items: center;
+  overflow-y: hidden;
+  justify-content: center;
+  @media screen and (max-width: 480px) {
+    margin-top: 1rem;
+  }
 `;

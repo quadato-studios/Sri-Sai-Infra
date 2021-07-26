@@ -16,7 +16,7 @@ export const Nav = styled.nav`
     display: none;
   }
 `;
-export const MobileNav = styled.nav`
+export const MobileNav = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
     display: flex;
