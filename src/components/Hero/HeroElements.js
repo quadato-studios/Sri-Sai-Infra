@@ -19,6 +19,14 @@ export const HeroContainer = styled.div`
     margin-top: 3rem;
     margin-left: 0rem;
   }
+  @media screen and (max-width: 480px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 1.5rem;
+    margin-left: 0rem;
+    margin-bottom: -15rem;
+  }
 `;
 export const TextContainer = styled.div`
   display: flex;
@@ -29,11 +37,13 @@ export const TextContainer = styled.div`
   h1 {
     font-size: 3.5rem;
     font-weight: 900;
-    color: rgba(0, 163, 255);
+    color: rgba(255, 255, 255);
   }
   p {
     margin-top: -0.3rem;
     font-size: 1.2rem;
+    color: white;
+    text-align: justify;
   }
   @media screen and (max-width: 768px) {
     display: flex;
@@ -49,6 +59,7 @@ export const TextContainer = styled.div`
       font-size: 1.2rem;
       text-align: center;
       margin-top: 2rem;
+      text-align: justify;
     }
   }
 `;

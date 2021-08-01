@@ -5,10 +5,12 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarRoute,
+  CloseIcon,
 } from "./SidebarElements";
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <CloseIcon size={43} color="white" onClick={toggle} />
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarRoute to="/">

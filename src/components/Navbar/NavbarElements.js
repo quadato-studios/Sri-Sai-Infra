@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 export const Nav = styled.nav`
   height: 80px;
+  margin: 0rem 8rem;
+  margin-top: 3rem;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
@@ -10,7 +12,7 @@ export const Nav = styled.nav`
   border-radius: 20px;
   overflow-y: hidden;
   font-family: Poppins;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(33px);
   @media screen and (max-width: 768px) {
     display: none;
@@ -21,23 +23,21 @@ export const MobileNav = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    margin: 0 0.5rem;
+    margin-top: 1rem;
     height: 80px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.22);
     box-sizing: border-box;
     border-radius: 20px;
     overflow-y: hidden;
     font-family: Poppins;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.6);
     /* background-color: blue; */
     backdrop-filter: blur(33px);
     img {
-      width: 50vw;
-    }
-    .icon {
-      margin-right: 5rem;
+      width: 65vw;
     }
   }
 `;
@@ -74,12 +74,12 @@ export const NavLinks = styled(Link)`
   font-size: 18px;
 
   &.active {
-    color: #01bf71;
+    color: #fff;
     font-weight: 500;
   }
   &:hover {
-    color: #00a2ff;
-    background: rgba(0, 194, 255, 0.13);
+    color: #fff;
+    background: rgba(0, 194, 255, 0.53);
     border-radius: 6px;
   }
 `;

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
+import { IoIosClose } from "react-icons/io";
+
 export const SidebarContainer = styled.aside`
   position: fixed;
   z-index: 999;
@@ -66,4 +68,9 @@ export const SidebarRoute = styled(LinkR)`
     background: #fff;
     color: rgba(0, 194, 255);
   }
+`;
+
+export const CloseIcon = styled(IoIosClose)`
+  margin-left: 80%;
+  margin-bottom: -25rem;
 `;

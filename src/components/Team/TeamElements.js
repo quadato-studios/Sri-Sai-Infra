@@ -17,7 +17,7 @@ export const TeamContainer = styled.div`
     font-weight: 300;
     line-height: 24px;
     margin: 0 10rem;
-    text-align: center;
+    text-align: justify;
   }
   @media screen and (max-width: 768px) {
     overflow-y: hidden;
@@ -32,7 +32,8 @@ export const TeamContainer = styled.div`
       line-height: 22px;
       margin: 0rem;
       margin-top: 2rem;
-      text-align: center;
+      text-align: justify;
+
       margin: 0rem 1rem;
     }
   }

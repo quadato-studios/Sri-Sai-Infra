@@ -6,22 +6,23 @@ export const MainContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   margin-top: 10rem;
-  background: rgba(255, 255, 255, 0.13);
-  backdrop-filter: blur(200px);
+  background: rgba(0, 163, 255);
+
   justify-content: center;
   align-items: center;
-  margin: 2rem 2rem;
+  margin: 0rem 4rem;
+  margin-top: 10rem;
   border-radius: 30px;
-  color: black;
+  color: white;
   @media screen and (max-width: 768px) {
     margin: 0rem;
   }
   @media screen and (max-width: 480px) {
-    margin: 0rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     width: 90vw;
     margin: 0rem 1.2rem;
+    padding: 2rem 0rem;
   }
 `;
 

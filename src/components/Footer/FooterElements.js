@@ -4,13 +4,14 @@ export const FooterContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  /* margin: 3rem; */
+  margin-top: 5rem;
   font-family: Poppins;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr 1fr 2fr;
   }
   @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 `;
 
@@ -36,7 +37,7 @@ export const LeftContainer = styled.div`
   }
   img {
     @media screen and (max-width: 480px) {
-      display: none;
+      display: flex;
     }
   }
 `;
@@ -96,6 +97,6 @@ export const RightContainer = styled.div`
     }
   }
   @media screen and (max-width: 480px) {
-    display: none;
+    display: flex;
   }
 `;

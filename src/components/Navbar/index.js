@@ -38,9 +38,8 @@ const Navbar = ({ toggle }) => {
         </NavbarContainer>
       </Nav>
       <MobileNav>
-        <IoIosMenu onClick={toggle} className="icon" size={32} />
-
         <img src={Logo} alt="#" />
+        <IoIosMenu onClick={toggle} className="icon" size={32} />
       </MobileNav>
     </MainDiv>
   );

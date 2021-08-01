@@ -6,7 +6,7 @@ export const CTAContainer = styled.div`
   grid-template-rows: 1fr;
   font-family: Poppins;
   background: rgba(0, 163, 255);
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   margin-top: 3rem;
   @media screen and (max-width: 480px) {
     grid-template-columns: 1fr;

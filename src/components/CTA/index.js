@@ -17,7 +17,7 @@ function CTA() {
         </LeftCTAContainer>
         <RightCTAContainer>
           <h2>HOW CAN WE HELP YOU?</h2>
-          <a href="tel: +918048736989">Get in touch</a>
+          <a href="tel: +918048736989">Click To Call</a>
         </RightCTAContainer>
       </CTAContainer>
     </div>

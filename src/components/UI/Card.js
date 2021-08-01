@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { pulse } from "react-animations";
+import { IoIosNavigate } from "react-icons/io";
 const zoomInAnimation = keyframes`${pulse}`;
 function Card(props) {
   // const handleClick = (e) => {
@@ -11,7 +12,10 @@ function Card(props) {
     <CardComponent id={props.id}>
       <img src={props.src} alt="#" width="100%" height="100%" />
       <h5>{props.title}</h5>
-      <p>{props.address}</p>
+      <div className="location">
+        <IoIosNavigate size={23} color="blue" />
+        <p>{props.address}</p>
+      </div>
     </CardComponent>
   );
 }
@@ -36,14 +40,13 @@ const CardComponent = styled.div`
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
+    color: white;
     /* identical to box height, or 133% */
 
     text-align: center;
     font-feature-settings: "liga" off;
 
     /* Text / Gray 900 */
-
-    color: #18191f;
   }
 
   p {
@@ -51,15 +54,20 @@ const CardComponent = styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-
+    margin-left: 0.5rem;
     text-align: center;
     font-feature-settings: "liga" off;
 
-    color: grey;
+    color: black;
   }
   &:hover {
     box-shadow: 0px 0px 26px rgba(0, 194, 255, 0.5);
     animation: 1s ${zoomInAnimation};
+  }
+  .location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   @media screen and (max-width: 480px) {
     &:hover {

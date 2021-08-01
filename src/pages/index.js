@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Team from "../components/Team";
 
-import bgImg from "../assets/bg3.jpg";
+import bgImg from "../assets/bg4.jpg";
 import Sidebar from "../components/Sidebar";
 
 const Home = () => {
@@ -16,13 +16,17 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div style={{ backgroundImage: `url(${bgImg})` }}>
+    <div
+      style={{
+        backgroundImage: `url(${bgImg})`,
+      }}
+    >
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Hero />
+      <Achievments />
       <Team />
       <Projects />
-      <Achievments />
       <CTA />
       <Footer />
     </div>
