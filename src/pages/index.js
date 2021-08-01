@@ -7,7 +7,7 @@ import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Team from "../components/Team";
 
-import bgImg from "../assets/bg4.jpg";
+import bgImg from "../assets/3d.jpg";
 import Sidebar from "../components/Sidebar";
 
 const Home = () => {
