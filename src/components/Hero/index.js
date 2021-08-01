@@ -6,6 +6,7 @@ import {
   ImgContainer,
   TiltWrapper,
 } from "./HeroElements";
+import { Link } from "react-router-dom";
 import img1 from "../../assets/img1.jpg";
 function Hero() {
   return (
@@ -21,9 +22,11 @@ function Hero() {
           than 12 ventures in and around Hyderabad and Secunderabad in their
           individual capacity
         </p>
-        <BtnContainer>
-          <button>Explore Projects</button>
-        </BtnContainer>
+        <Link to="/projects">
+          <BtnContainer>
+            <button>Explore Projects</button>
+          </BtnContainer>
+        </Link>
       </TextContainer>
       <TiltWrapper>
         <ImgContainer src={img1} />

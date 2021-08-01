@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "../components/page-components/Project";
-import bgImg from "../assets/bg4.jpg";
+import bgImg from "../assets/3d.jpg";
 
 const ProjectsPage = () => {
   return (
