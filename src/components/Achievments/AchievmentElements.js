@@ -5,7 +5,6 @@ export const MainContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  margin-top: 10rem;
   background: rgba(0, 163, 255);
 
   justify-content: center;
@@ -21,7 +20,8 @@ export const MainContainer = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     width: 90vw;
-    margin: 0rem 1.2rem;
+    margin-top: 10rem;
+    margin-left: 1.4rem;
     padding: 2rem 0rem;
   }
 `;
