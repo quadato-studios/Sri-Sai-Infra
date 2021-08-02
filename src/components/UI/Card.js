@@ -40,7 +40,7 @@ const CardComponent = styled.div`
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    color: white;
+    color: rgba(0, 163, 255);
     /* identical to box height, or 133% */
 
     text-align: center;

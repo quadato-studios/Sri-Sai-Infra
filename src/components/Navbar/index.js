@@ -11,12 +11,15 @@ import {
 } from "./NavbarElements";
 import Logo from "../../assets/logo.png";
 import { IoIosMenu } from "react-icons/io";
+import { Link } from "react-router-dom";
 const Navbar = ({ toggle }) => {
   return (
     <MainDiv>
       <Nav>
         <NavbarContainer>
-          <NavLogo src={Logo} width="350px" height="90px" />
+          <Link to="/">
+            <NavLogo src={Logo} width="350px" height="90px" />
+          </Link>
 
           <NavMenu>
             <NavItem>

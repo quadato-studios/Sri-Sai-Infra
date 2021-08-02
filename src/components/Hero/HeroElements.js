@@ -37,12 +37,12 @@ export const TextContainer = styled.div`
   h1 {
     font-size: 3.5rem;
     font-weight: 900;
-    color: rgba(255, 255, 255);
+    color: rgba(0, 163, 255);
   }
   p {
     margin-top: -0.3rem;
     font-size: 1.2rem;
-    color: white;
+    color: black;
     text-align: justify;
   }
   @media screen and (max-width: 768px) {
@@ -69,7 +69,7 @@ export const BtnContainer = styled.div`
     margin-top: 1rem;
     border: none;
     padding: 0.9rem 1.1rem;
-    color: #fff;
+    color: #000;
     border-radius: 1rem;
     box-shadow: 0px 13px 24px -7px #81d1ff;
     transition: all 0.3s ease-in-out;
