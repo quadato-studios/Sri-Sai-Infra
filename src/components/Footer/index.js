@@ -8,6 +8,7 @@ import {
 import { FaFacebook, FaInstagram, FaPhone } from "react-icons/fa";
 import Logo from "../../assets/logo.png";
 import Img from "../../assets/footerBG.jpg";
+// import Link from 'react-router-dom';
 function Footer() {
   return (
     <div
@@ -40,19 +41,19 @@ function Footer() {
           <h3>Links</h3>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="/home">About</a>
+              <a href="/about">About</a>
             </li>
             <li>
-              <a href="/home">Projects</a>
+              <a href="/projects">Projects</a>
             </li>
             <li>
-              <a href="/home">Gallery</a>
+              <a href="/gallery">Gallery</a>
             </li>
             <li>
-              <a href="/home">Contact Us</a>
+              <a href="/contact-us">Contact Us</a>
             </li>
           </ul>
         </MiddleContainer>
