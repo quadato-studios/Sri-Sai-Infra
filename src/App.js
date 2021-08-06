@@ -12,10 +12,10 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={AboutPage} exact />
-          <Route path="/projects" component={ProjectsPage} exact />
-          <Route path="/gallery" component={GalleryPage} exact />
-          <Route path="/contact-us" component={ContactUsPage} exact />
+          <Route exact path="/about" component={AboutPage} />
+          <Route exact path="/projects" component={ProjectsPage} />
+          <Route exact path="/gallery" component={GalleryPage} />
+          <Route exact path="/contact-us" component={ContactUsPage} />
         </Switch>
       </Router>
     </ChakraProvider>
