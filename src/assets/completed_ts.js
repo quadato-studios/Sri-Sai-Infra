@@ -2,10 +2,10 @@ import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";
 import img3 from "../assets/3.jpg";
 import img4 from "../assets/4.jpg";
-import img5 from "../assets/4.jpg";
+import img5 from "../assets/acropoilc-tulip.jpeg";
 import img6 from "../assets/4.jpg";
 import img7 from "../assets/4.jpg";
-import img8 from "../assets/4.jpg";
+import img8 from "../assets/sulochana arcade (2).png";
 
 const data = [
   {
@@ -90,7 +90,7 @@ const data = [
     id: 8,
     title: "Sree Surya Residency",
     address: "Eswaripuri colony,Kapra, Hyderabad",
-    img: img8,
+    img: img7,
     totalSqFt: "9650 sq.ft",
     flats: "5",
     municipality: "HMDA",
