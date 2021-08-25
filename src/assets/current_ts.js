@@ -1,14 +1,14 @@
-import img1 from "../assets/1.jpg";
+import img1 from "../assets/sulochana arcade (2).png";
 import img2 from "../assets/2.jpg";
 import img3 from "../assets/Swapna residancy.jpeg";
-import img4 from "../assets/4.jpg";
+import img4 from "../assets/acropoilc-tulip.jpeg";
 import img5 from "../assets/Pramila residancy.jpeg";
 import img6 from "../assets/Neharika homes.jpeg";
 import img7 from "../assets/6.jpg";
 const data = [
   {
     id: 1,
-    title: "Sree Mayukha",
+    title: "Sulochana Arcade",
     address: "Bapuji Nagar, HMT Nagar Hyderabad",
     img: img1,
     sqft: "11,120 sq.ft",

@@ -42,7 +42,7 @@ function Projects(props) {
     <div data-aos="fade-up" data-aos-duration="2000">
       <ProjectConatiner>
         <h1>Projects!!</h1>
-        <h4>{toggle ? "Completed Projects" : "Current Projects"}</h4>
+        <h4>{!toggle ? "Completed Projects" : "Current Projects"}</h4>
         <Switch
           onChange={() => {
             setToggle((prevState) => !prevState);
@@ -62,7 +62,7 @@ function Projects(props) {
         />
         <Cards>
           {!toggle
-            ? data.map((ex) => (
+            ? Data.map((ex) => (
                 <div key={ex.id} onClick={(ev) => handleClick(ev, ex.id, "o")}>
                   <Card
                     key={ex.id}
@@ -73,7 +73,7 @@ function Projects(props) {
                   />
                 </div>
               ))
-            : Data.map((ez) => (
+            : data.map((ez) => (
                 <div key={ez.id} onClick={(ev) => handleClick(ev, ez.id, "n")}>
                   <Card
                     key={ez.id}
