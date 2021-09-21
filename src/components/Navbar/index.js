@@ -18,7 +18,7 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavbarContainer>
           <Link to="/">
-            <NavLogo src={Logo} width="350px" height="90px" />
+            <NavLogo src={Logo} width="250px" />
           </Link>
 
           <NavMenu>
