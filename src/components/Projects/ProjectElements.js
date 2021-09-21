@@ -36,6 +36,7 @@ export const ProjectConatiner = styled.div`
 
 export const Cards = styled.div`
   display: grid;
+  margin-top:-6rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 

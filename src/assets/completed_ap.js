@@ -1,5 +1,5 @@
-import img1 from "../assets/1.jpg";
-import img2 from "../assets/2.jpg";
+import img1 from "../assets/Error.svg";
+import img2 from "../assets/Error.svg";
 
 
 const data = [

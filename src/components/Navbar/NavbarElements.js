@@ -87,6 +87,7 @@ export const NavLinks = styled(Link)`
 export const NavLogo = styled.img`
   display: flex;
   justify-self: flex-start;
+  margin-bottom: 2rem;
 `;
 export const MainDiv = styled.div`
   justify-content: center;
