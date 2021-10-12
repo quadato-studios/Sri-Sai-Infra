@@ -17,8 +17,8 @@ function Hero() {
           We introduce ourselves as Sri Sai Infra Developers Pvt Ltd,
           incorporated as Pvt Ltd Company in the year 2008 under Companies Act,
           1956, the company was founded by Directors Balla Bramhanandam Naidu
-          and Kannegenti Srinivas . Both the Directors have vast experience in
-          construction activity for the last 20 years. They have completed more
+          and Srinivas Kanneganti. Both the Directors have vast experience in
+          construction activity for the last 25 years. They have completed more
           than 12 ventures in and around Hyderabad and Secunderabad in their
           individual capacity
         </p>
