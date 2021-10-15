@@ -29,10 +29,10 @@ const CurProjectDetails = (props) => {
           <SideHeading>Flat Size : </SideHeading>
           <p>{props.flatSize}</p>
         </SubHeadingWrapper>
-        <SubHeadingWrapper>
+        {/* <SubHeadingWrapper>
           <SideHeading>Cost of Project : </SideHeading>
           <p>{props.costOfProject}</p>
-        </SubHeadingWrapper>
+        </SubHeadingWrapper> */}
         <SubHeadingWrapper>
           <SideHeading>Availability Status : </SideHeading>
           <p>{props.flats}</p>

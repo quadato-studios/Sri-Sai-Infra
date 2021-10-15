@@ -36,12 +36,10 @@ export const ProjectConatiner = styled.div`
 
 export const Cards = styled.div`
   display: grid;
-  margin-top: -6rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin-top: 3px;
 
-  padding-top: 2rem;
+  margin-top: -5rem;
   place-items: center;
   overflow-y: hidden;
   @media screen and (max-width: 768px) {
