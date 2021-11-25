@@ -34,13 +34,13 @@ function Projects(props) {
           setInfo(i);
         }
       });
-    } else if(m === 'n' && state) {
+    } else if (m === "n" && state) {
       CurrentAP.forEach((i) => {
         if (i.id === id) {
           setInfo(i);
         }
       });
-    } else if (m==='o' && state) {
+    } else if (m === "o" && state) {
       CompletedAP.forEach((i) => {
         if (i.id === id) {
           setInfo(i);
@@ -77,7 +77,7 @@ function Projects(props) {
           id="material-switch"
         />
         <h4>{state ? "Andhra Pradesh" : "Telangana"}</h4>
-         <Switch
+        <Switch
           onChange={() => {
             setState((prevState) => !prevState);
           }}
@@ -94,45 +94,34 @@ function Projects(props) {
           className="react-switch"
           id="material-switch"
         />
+        <div style={{ marginBottom: "60px" }} />
         <Cards>
-          {
-            toggle && state
+          {toggle && state
             ? CompletedAP.map((ex) => (
-              <div key={ex.id} onClick={(ev) => handleClick(ev, ex.id, "o")}>
-                <Card
-                  key={ex.id}
-                  id={ex.id}
-                  title={ex.title}
-                  address={ex.address}
-                  src={ex.img}
-                />
-              </div>
-            ))
+                <div key={ex.id} onClick={(ev) => handleClick(ev, ex.id, "o")}>
+                  <Card
+                    key={ex.id}
+                    id={ex.id}
+                    title={ex.title}
+                    address={ex.address}
+                    src={ex.img}
+                  />
+                </div>
+              ))
             : toggle && !state
             ? CompletedTS.map((ex) => (
-              <div key={ex.id} onClick={(ev) => handleClick(ev, ex.id, "o")}>
-                <Card
-                  key={ex.id}
-                  id={ex.id}
-                  title={ex.title}
-                  address={ex.address}
-                  src={ex.img}
-                />
-              </div>
-            ))
+                <div key={ex.id} onClick={(ev) => handleClick(ev, ex.id, "o")}>
+                  <Card
+                    key={ex.id}
+                    id={ex.id}
+                    title={ex.title}
+                    address={ex.address}
+                    src={ex.img}
+                  />
+                </div>
+              ))
             : !toggle && state
             ? CurrentAP.map((ez) => (
-              <div key={ez.id} onClick={(ev) => handleClick(ev, ez.id, "n")}>
-                <Card
-                  key={ez.id}
-                  id={ez.id}
-                  title={ez.title}
-                  address={ez.address}
-                  src={ez.img}
-                />
-              </div>
-            ))
-              : CurrentTS.map((ez) => (
                 <div key={ez.id} onClick={(ev) => handleClick(ev, ez.id, "n")}>
                   <Card
                     key={ez.id}
@@ -143,7 +132,17 @@ function Projects(props) {
                   />
                 </div>
               ))
-          }
+            : CurrentTS.map((ez) => (
+                <div key={ez.id} onClick={(ev) => handleClick(ev, ez.id, "n")}>
+                  <Card
+                    key={ez.id}
+                    id={ez.id}
+                    title={ez.title}
+                    address={ez.address}
+                    src={ez.img}
+                  />
+                </div>
+              ))}
         </Cards>
       </ProjectConatiner>
       <Modal
@@ -168,14 +167,14 @@ function Projects(props) {
           <ModalBody>
             {toggle ? (
               <CoProjectDetails
-              src={info?.img}
-              address={info?.address}
-              status={info?.status}
-              totalSqFt={info?.totalSqFt}
-              municipality={info?.municipality}
-              flats={info?.flats}
-              completionStatus={info?.completionStatus}
-            />
+                src={info?.img}
+                address={info?.address}
+                status={info?.status}
+                totalSqFt={info?.totalSqFt}
+                municipality={info?.municipality}
+                flats={info?.flats}
+                completionStatus={info?.completionStatus}
+              />
             ) : (
               <CurProjectDetails
                 src={info?.img}
