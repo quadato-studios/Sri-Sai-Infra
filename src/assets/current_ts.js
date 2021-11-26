@@ -1,10 +1,14 @@
 import img1 from "../assets/T1.png";
-import img2 from "../assets/T4.jpg";
-import img3 from "../assets/T2.jpg";
+import img2 from "../assets/T2.jpg";
+import img3 from "../assets/T3.jpeg";
 import img4 from "../assets/T4.jpg";
 import img5 from "../assets/T5.jpg";
 import img6 from "../assets/T6.jpg";
 import img7 from "../assets/T7.jpeg";
+import img8 from "../assets/T8.jpeg";
+import img9 from "../assets/T10.jpg";
+import img10 from "../assets/T9.jpeg";
+
 const data = [
   {
     id: 1,
@@ -16,7 +20,7 @@ const data = [
     flatSize: "1390 sft",
     municipality: "GHMC",
     status: "Completed",
-    flats: "Available",
+    flats: "SOLD OUT",
     gmap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15227.228784125653!2d78.549709!3d17.421038!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb995b5e41806d%3A0xbd7e50ed45e6e56f!2sHMT%20Nagar%2C%20Nacharam%2C%20Secunderabad%2C%20Telangana%20500007!5e0!3m2!1sen!2sin!4v1626191636165!5m2!1sen!2sin",
     description: "",
   },
@@ -29,8 +33,8 @@ const data = [
     noOfFlat: "4",
     flatSize: "1570 Sqft",
     municipality: "GHMC",
-    status: "In process",
-    flats: "",
+    status: "Ongoing",
+    flats: "Available",
     gmap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7744360054667!2d78.54425911487684!3d17.42260928805752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI1JzIxLjQiTiA3OMKwMzInNDcuMiJF!5e0!3m2!1sen!2sin!4v1631970482031!5m2!1sen!2sin",
 
     description: "",
@@ -40,11 +44,11 @@ const data = [
     title: "SWAPNA RESIDENCY",
     address: "Karthikeya Nagar, Nacharam, Hyderabad",
     img: img3,
-    sqft: "7600 sq.ft",
+    sqft: "1950 sq.ft",
     noOfFlat: "4",
     flatSize: "1950 Sft",
     municipality: "GHMC",
-    status: "45% Completed",
+    status: "Ongoing",
     flats: "Available",
     gmap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d237.91513072749498!2d78.5473284!3d17.4289556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI1JzQ4LjUiTiA3OMKwMzInNDcuMSJF!5e0!3m2!1sen!2sin!4v1631969775065!5m2!1sen!2sin",
     description: "",
@@ -58,14 +62,14 @@ const data = [
     noOfFlat: "20",
     flatSize: "1025 Sft",
     municipality: "GHMC",
-    status: "Permission Received",
+    status: "Ongoing",
     flats: "Available",
     gmap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.001943298651!2d78.5718391148767!3d17.411694388064028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI0JzQyLjEiTiA3OMKwMzQnMjYuNSJF!5e0!3m2!1sen!2sin!4v1631969873643!5m2!1sen!2sin",
     description: "",
   },
   {
     id: 5,
-    title: "Pramila Residency",
+    title: "PRAMILA RESIDENCY",
     address: "SREET NO 10 KARTHIKEYA NAGAR ",
     img: img5,
     sqft: "",
@@ -79,7 +83,7 @@ const data = [
   },
   {
     id: 6,
-    title: "Neehaarika Homes",
+    title: "NEEHAARIKA HOMES",
     address: "SREET NO 10 KARTHIKEYA NAGAR  ",
     img: img6,
     sqft: "",
@@ -96,19 +100,19 @@ const data = [
     id: 7,
     title: "RAGHAVENDRA NILAYAM",
     address: "STREET NO-1 BAPUJI NAGAR HMT NACHARAM HYDERABAD",
-    img: img3,
+    img: img8,
     sqft: "",
     noOfFlat: "4",
-    flatSize: "1570 sft",
+    flatSize: "1525 sft",
     municipality: "GHMC",
     status: "Ongoing",
-    flats: "Available",
+    flats: "SOLD OUT",
     gmap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.617410487857!2d78.54422801487698!3d17.43013888805305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI1JzQ4LjUiTiA3OMKwMzInNDcuMSJF!5e0!3m2!1sen!2sin!4v1631970314345!5m2!1sen!2sin",
     description: "",
   },
   {
     id: 8,
-    title: "Prasanth Kutter",
+    title: "PRASANTH KUTTER",
     address: "SREET NO 9 KARTHIKEYA NAGAR",
     img: img7,
     sqft: "",
@@ -124,7 +128,7 @@ const data = [
     id: 9,
     title: "NOMULA KRISHNA REDDY",
     address: "BAPUJI NAGAR HMT NACHARAM HYDERABAD",
-    img: img3,
+    img: img9,
     sqft: "",
     noOfFlat: "8",
     flatSize: "1390 sft",
@@ -132,6 +136,20 @@ const data = [
     status: "Ongoing",
     flats: "Available",
     gmap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7744360054667!2d78.54425911487684!3d17.42260928805752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI1JzIxLjQiTiA3OMKwMzInNDcuMiJF!5e0!3m2!1sen!2sin!4v1634052399890!5m2!1sen!2sin",
+    description: "",
+  },
+  {
+    id: 10,
+    title: "SIVASRI NELAYAM",
+    address: "STREET NO 3 HMT NACHARAM HYDERABAD",
+    img: img10,
+    sqft: "",
+    noOfFlat: "8",
+    flatSize: "1125 sft",
+    municipality: "GHMC",
+    status: "Ongoing",
+    flats: "Available",
+    gmap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3806.785429834308!2d78.5476243!3d17.422082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7019410cec71e9!2zMTfCsDI1JzIyLjYiTiA3OMKwMzInNTIuOCJF!5e0!3m2!1sen!2sin!4v1637853797593!5m2!1sen!2sin",
     description: "",
   },
 ];
