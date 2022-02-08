@@ -1,5 +1,5 @@
-import img1 from "../assets/AP-2.jpeg";
-import img2 from "../assets/AP-3.jpeg";
+import img1 from "../assets/AP-1.jpeg";
+import img2 from "../assets/AP-2.jpeg";
 
 const data = [
   {
@@ -9,10 +9,10 @@ const data = [
     img: img1,
     sqft: "",
     noOfFlat: "6",
-    flatSize: "	1100,1400 Sft",
+    flatSize: "1050,1060,1070 Sft",
     municipality: "KMDA",
-    status: "Ongoing",
-    flats: "2 & 3 BHK Available",
+    status: "Ready to move",
+    flats: "2 BHK Available",
     gmap: "",
     description: "",
   },
@@ -27,7 +27,7 @@ const data = [
     municipality: "KMDA",
     status: "Ongoing",
     flats: "2BHK Available",
-    gmap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3815.66745795213!2d82.245163!3d16.9909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3827d823118eaf%3A0x44415d8de856d14a!2sKakinada%2C%20Andhra%20Pradesh%20533001!5e0!3m2!1sen!2sin!4v1637856001738!5m2!1sen!2sin",
+    gmap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3815.66745795213!2d82.245163!3d16.9909!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3827d823118eaf%3A0x44415d8de856d14a!2sKakinada%2C%20Andhra%20Pradesh%20533001!5e0!3m2!1sen!2sin!4v1644335929875!5m2!1sen!2sin",
     description: "",
   },
 ];

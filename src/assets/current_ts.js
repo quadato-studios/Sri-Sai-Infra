@@ -1,13 +1,13 @@
 import img1 from "../assets/T1.png";
 import img2 from "../assets/T2.jpg";
-import img3 from "../assets/T3.jpeg";
+import img3 from "../assets/T3.jpg";
 import img4 from "../assets/T4.jpg";
 import img5 from "../assets/T5.jpg";
 import img6 from "../assets/T6.jpg";
 import img7 from "../assets/T7.jpeg";
 import img8 from "../assets/T8.jpeg";
-import img9 from "../assets/T10.jpg";
-import img10 from "../assets/T9.jpeg";
+import img10 from "../assets/T10.jpeg";
+import img9 from "../assets/T9.jpeg";
 
 const data = [
   {
@@ -28,8 +28,8 @@ const data = [
     id: 2,
     title: "SREE NELIYAM",
     address: "STREET NO-1BAPUJI NAGAR HMT NACHARAM HYDERABAD",
-    img: img2,
-    sqft: "",
+    img: img3,
+    sqft: "6280Sft",
     noOfFlat: "4",
     flatSize: "1570 Sqft",
     municipality: "GHMC",
@@ -43,8 +43,8 @@ const data = [
     id: 3,
     title: "SWAPNA RESIDENCY",
     address: "Karthikeya Nagar, Nacharam, Hyderabad",
-    img: img3,
-    sqft: "1950 sq.ft",
+    img: img2,
+    sqft: "7800 Sft",
     noOfFlat: "4",
     flatSize: "1950 Sft",
     municipality: "GHMC",
@@ -72,7 +72,7 @@ const data = [
     title: "PRAMILA RESIDENCY",
     address: "SREET NO 10 KARTHIKEYA NAGAR ",
     img: img5,
-    sqft: "",
+    sqft: "7100.00Sft",
     noOfFlat: "4",
     flatSize: "1775 sqft",
     municipality: "GHMC",
@@ -86,7 +86,7 @@ const data = [
     title: "NEEHAARIKA HOMES",
     address: "SREET NO 10 KARTHIKEYA NAGAR  ",
     img: img6,
-    sqft: "",
+    sqft: "8040Sft",
     noOfFlat: "4",
     flatSize: "2010 sft",
     costOfProject: "",
@@ -101,7 +101,7 @@ const data = [
     title: "RAGHAVENDRA NILAYAM",
     address: "STREET NO-1 BAPUJI NAGAR HMT NACHARAM HYDERABAD",
     img: img8,
-    sqft: "",
+    sqft: "6100SSft",
     noOfFlat: "4",
     flatSize: "1525 sft",
     municipality: "GHMC",
@@ -115,7 +115,7 @@ const data = [
     title: "PRASANTH KUTTER",
     address: "SREET NO 9 KARTHIKEYA NAGAR",
     img: img7,
-    sqft: "",
+    sqft: "13500Sft",
     noOfFlat: "10",
     flatSize: "1450 sft",
     municipality: "GHMC",
@@ -126,16 +126,16 @@ const data = [
   },
   {
     id: 9,
-    title: "NOMULA KRISHNA REDDY",
+    title: "SREE KRISHNA",
     address: "BAPUJI NAGAR HMT NACHARAM HYDERABAD",
     img: img9,
-    sqft: "",
-    noOfFlat: "8",
+    sqft: "13500Sft",
+    noOfFlat: "10",
     flatSize: "1390 sft",
     municipality: "GHMC",
     status: "Ongoing",
     flats: "Available",
-    gmap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.7744360054667!2d78.54425911487684!3d17.42260928805752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI1JzIxLjQiTiA3OMKwMzInNDcuMiJF!5e0!3m2!1sen!2sin!4v1634052399890!5m2!1sen!2sin",
+    gmap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3806.785429834308!2d78.5476243!3d17.422082!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7019410cec71e9!2zMTfCsDI1JzIyLjYiTiA3OMKwMzInNTIuOCJF!5e0!3m2!1sen!2sin!4v1644335706587!5m2!1sen!2sin",
     description: "",
   },
   {
@@ -143,8 +143,8 @@ const data = [
     title: "SIVASRI NELAYAM",
     address: "STREET NO 3 HMT NACHARAM HYDERABAD",
     img: img10,
-    sqft: "",
-    noOfFlat: "8",
+    sqft: "11250Sft",
+    noOfFlat: "10",
     flatSize: "1125 sft",
     municipality: "GHMC",
     status: "Ongoing",
