@@ -19,7 +19,7 @@ function Hero() {
           1956, the company was founded by Directors Balla Bramhanandam Naidu
           and Srinivas Kanneganti. Both the Directors have vast experience in
           construction activity for the last 25 years. They have completed more
-          than 12 ventures in and around Hyderabad and Secunderabad in their
+          than 24 ventures in and around Hyderabad and Secunderabad in their
           individual capacity
         </p>
         <Link to="/projects">
